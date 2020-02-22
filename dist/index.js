@@ -71,6 +71,7 @@ async function run() {
     core.debug((new Date()).toTimeString())
 
     core.setOutput('time', new Date().toTimeString());
+    core.setOutput('nameToGreet', nameToGreet);
   } 
   catch (error) {
     core.setFailed(error.message);

@@ -5,9 +5,15 @@ inputs:
     description: 'number of milliseconds to wait'
     required: true
     default: '1000'
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
 outputs:
   time: # output will be available to future steps 
     description: 'The message to output'
+  nameToGreet:
+    description: 'Name given'
 runs:
   using: 'node12'
   main: 'dist/index.js'
